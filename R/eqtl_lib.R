@@ -249,7 +249,8 @@ eqtl.min.p <- function(expr, ...) {
 #' @title basic eQTL interface
 #' @param reg BatchJobs registry
 #' @param waittime time to wait before updating job status
-#' @param nretry number of time to retry getting the job status before throwing #'        an error
+#' @param nretry number of time to retry getting the job status before throwing 
+#'        an error
 myWaitForJobs <- function(reg, waittime=3, nretry=100) {
   success = FALSE
   while (nretry > 0 && !success) {
